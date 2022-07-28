@@ -1,28 +1,26 @@
 <?php
 
-$Name = "Manette";
-$Price = "25";
-$Picture = "Media/manette.jpg"
+$name = "Manette";
+$price = "25";
+$picture = "media/manette.jpg"
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Mon site ecommerce</title>
 </head>
 <body>
+<?php include 'header.php'; ?>
 <h1> Les produits: </h1>
 
-<h2> Mon premier article: <?= $Name ?></h2>
-
 <div>
-    <img src = "<?= $Picture ?> " alt="Photo d'une manette">
+    <h2> Mon premier article: <?= $name ?></h2>
+    <img src="<?= $picture ?> " alt="Photo d'une manette">
+    <p>Le prix est de : <?= $price . "€"  ?></p>
 </div>
-
-    <h2>Le prix est de : <?= "${Price}€" ?></h2>
-
-
+<?php include "footer.php"; ?>
 </body>
 </html>
 
