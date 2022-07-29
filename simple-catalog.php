@@ -13,4 +13,3 @@ echo '<br>';
 
 $longueur = count($products);
 print_r($products[$longueur-1]);
-
