@@ -8,4 +8,8 @@ echo '<br>';
 print_r($products[0]);
 
 echo '<br>';
-print_r($products[2]);
+echo '<br>';
+echo '<br>';
+
+$longueur = count($products);
+print_r($products[$longueur-1]);
