@@ -21,11 +21,10 @@ echo  "Boucle While";
 echo '<br>';
 $i=0;
 
-while ($i<$longueur )
-    {
-        print_r($products[$i] . "<br>");
-        $i++;
-    }
+while ($i < $longueur) {
+    print_r($products[$i] . "<br>");
+    $i++;
+}
 
 
 echo '<br>';
@@ -37,7 +36,7 @@ $i=0;
 do {
     print_r($products[$i] . "<br>");
     $i++;
-} while ($i<$longueur);
+} while ($i < $longueur);
 
 echo '<br>';
 
@@ -45,7 +44,7 @@ echo '<br>';
 echo "Boucle For";
 echo '<br>';
 
-for ($i=0; $i<$longueur; $i++)
+for ($i = 0; $i < $longueur; $i++)
 {
     print_r($products[$i] . "<br>");
 }

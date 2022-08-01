@@ -36,6 +36,8 @@ $imac = [
 <body>
 <?php include 'header.php'; ?>
 
+
+<div>
 <div>
     <h3><?= $iphone["name"]?></h3>
     <p>Prix : <?= $iphone["price"] . " €" ?></p>
@@ -54,6 +56,8 @@ $imac = [
     <p>Prix : <?= $ipad["price"] . " €" ?></p>
     <img src="<?= $ipad["picture_url"] ?> "  alt="Photo d'un ipad" width="250px" height="250px">
 </div>
+</div>
+
 
 
 <?php include "footer.php"; ?>
