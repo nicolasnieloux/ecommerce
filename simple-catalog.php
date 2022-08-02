@@ -1,6 +1,6 @@
 <?php
 $products = array("IPhone", "IPad", "IMac");
-
+require "my_functions.php";
 sort($products, SORT_STRING);
 print_r($products);
 
@@ -58,3 +58,20 @@ foreach ($products as $product)
 {
     print_r($product . "<br>");
 }
+
+echo '<br>';
+echo '<br>';
+echo '<br>';
+
+FormatPrice(15000);
+
+echo '<br>';
+echo '<br>';
+echo '<br>';
+priceExcludingVAT(15000);
+
+echo '<br>';
+echo '<br>';
+echo '<br>';
+
+$pricediscount = discountedPrice(15000, 25);
