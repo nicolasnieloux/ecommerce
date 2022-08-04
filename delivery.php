@@ -1,6 +1,7 @@
 <?php
-$products = [
-    "iphone" => [
+
+$delivery = [
+    "La poste" => [
         "name" => "iPhone",
         "price" => 45000,
         "weight" => 200,
@@ -23,4 +24,3 @@ $products = [
         "picture_url" => "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-2019-imac-215-gallery?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1559961087778",
     ]
 ];
-?>

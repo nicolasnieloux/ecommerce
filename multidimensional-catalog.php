@@ -1,5 +1,6 @@
 <?php require "my_functions.php";
 require "products.php";
+global $products;
 ?>
 
 
@@ -53,14 +54,14 @@ require "products.php";
     <p>Prix TTC : <?php FormatPrice($product["price"]);?></p>
     <p>Prix HT : <?php FormatPrice(priceExcludingVAT($product["price"]));  ?></p>
     <?php if ($product["discount"] != null) { ?>
-    <p>Prix Discount <?=$product["discount"] . "%"?>: <?php discountedPrice($product["price"],$product["discount"]);  ?></p>
+    <p>Prix Discount <?=$product["discount"] . "%"?>: <?php FormatPrice(discountedPrice($product["price"],$product["discount"]));  ?></p>
     <?php }
     else { ?>
     <p> Attend les soldes </p>
     <?php } ?>
     <img src="<?= $product["picture_url"] ?> " alt="Photo d'un iphone" width="250px" height="250px">
     <hr>
-    <form method="POST" action="cart.php" target="_blank">
+    <form method="post" action="cart.php" target="_blank">
         <label for="quantity"> Quantité :</label>
         <input type="number" id="quantity" name="quantity" min="0" max="10">
         <input type="hidden" id="info" name="key" value= "<?= $key?>" >
