@@ -40,10 +40,10 @@ $imac = [
 <div>
 <div>
     <h3><?= $iphone["name"]?></h3>
-    <p>Prix TTC : <?php FormatPrice($iphone["price"]);  ?></p>
-    <p>Prix HT : <?php FormatPrice(priceExcludingVAT($iphone["price"]));  ?></p>
+    <p>Prix TTC : <?php formatPrice($iphone["price"]);  ?></p>
+    <p>Prix HT : <?php formatPrice(priceExcludingVAT($iphone["price"]));  ?></p>
     <?php if ($iphone["discount"] != null){ ?>
-        <p>Prix Discount: <?php FormatPrice(discountedPrice($iphone["price"], $iphone["discount"]));  ?></p>
+        <p>Prix Discount: <?php formatPrice(discountedPrice($iphone["price"], $iphone["discount"]));  ?></p>
     <?php } else{ ?>
         <p> Attend les soldes </p>
     <?php } ?>
@@ -53,10 +53,10 @@ $imac = [
 
 <div>
     <h3><?= $imac ["name"] ?></h3>
-    <p>Prix : <?php FormatPrice($imac["price"]); ?></p>
-    <p>Prix HT : <?php FormatPrice(priceExcludingVAT($imac["price"]));  ?></p>
+    <p>Prix : <?php formatPrice($imac["price"]); ?></p>
+    <p>Prix HT : <?php formatPrice(priceExcludingVAT($imac["price"]));  ?></p>
     <?php if ($imac["discount"] != null){ ?>
-    <p>Prix Discount : <?php FormatPrice(discountedPrice($imac["price"],$imac["discount"]));  ?></p>
+    <p>Prix Discount : <?php formatPrice(discountedPrice($imac["price"],$imac["discount"]));  ?></p>
     <?php }
     else{ ?>
         <p> Attend les soldes </p>
@@ -67,9 +67,9 @@ $imac = [
 
 <div>
     <h3><?= $ipad ["name"] ?></h3>
-    <p>Prix TTC: <?php FormatPrice($ipad["price"]); ?></p>
-    <p>Prix HT : <?php FormatPrice(priceExcludingVAT($ipad["price"]));  ?></p>
-    <p>Prix Discount : <?php FormatPrice(discountedPrice($ipad["price"], $ipad["discount"]));  ?></p>
+    <p>Prix TTC: <?php formatPrice($ipad["price"]); ?></p>
+    <p>Prix HT : <?php formatPrice(priceExcludingVAT($ipad["price"]));  ?></p>
+    <p>Prix Discount : <?php formatPrice(discountedPrice($ipad["price"], $ipad["discount"]));  ?></p>
     <img src="<?= $ipad["picture_url"] ?> "  alt="Photo d'un ipad" width="250px" height="250px">
 </div>
 </div>

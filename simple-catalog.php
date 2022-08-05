@@ -63,7 +63,7 @@ echo '<br>';
 echo '<br>';
 echo '<br>';
 
-FormatPrice(15000);
+formatPrice(15000);
 
 echo '<br>';
 echo '<br>';

@@ -4,7 +4,7 @@ $products = [
         "name" => "iPhone",
         "price" => 45000,
         "weight" => 200,
-        "discount" => 25,
+        "discount" => 0,
         "picture_url" => "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-family-select-2021?wid=940&hei=1112&fmt=jpeg&qlt=90&.v=1617135051000",
     ],
 

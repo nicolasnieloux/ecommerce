@@ -10,6 +10,7 @@ $TVA = ($prixTTC - $prixHT);
 $TVAdiscount = discountedPrice($products[$key]["price"], $products[$key]["discount"]) - $prixHTDiscount;
 $prixTotal = $prixTTC * $productQuantity;
 
+
 $transporteur = "La Poste";
 if (isset($_POST['transporteur'])) {
     $transporteur = $_POST['transporteur'];
@@ -45,8 +46,8 @@ var_dump($_POST);
             <option value="Amazon">Amazon</option>
         </select>
         <br><br>
-        <input type="hidden" value="<?= $_POST["quantity"]; ?>" name="quantity">
-        <input type="hidden" value="<?= $_POST["key"] ?>" name="key">
+<!--        <input type="hidden" value="--><?//= $_POST["quantity"]; ?><!--" name="quantity">-->
+<!--        <input type="hidden" value="--><?//= $_POST["key"] ?><!--" name="key">-->
         <input type="submit" value="Valider">
     </form>
     <p>Prix transport : <?php formatPrice(deliver($transporteur, $products[$key]["weight"], $prixTotal)); ?></p>
